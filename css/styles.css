@@ -1,0 +1,146 @@
+* {
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+}
+
+body {
+    margin: 0;
+}
+
+div.grid {
+    width: 100%;
+    height: 10em;
+    margin: 0;
+    /*border: 1px solid black;*/
+}
+
+div a {
+    text-decoration: none;
+    color: white;
+/*    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 4em;*/
+}
+
+#box1, #box3, #box5, #box7, #box9, #box11 {
+    background-color: #ff5550;
+    color: white;
+}
+
+div#box1 {
+    text-align: center;
+    height: 11em;
+}
+
+div#box1 button {
+    width: 40%;
+    padding: 1% 0%;
+    font-size: 1em;
+    background-color: #ff5550;
+    color: white;
+    border: 1px solid white;
+}
+
+div.grid h3 {
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+a:hover, button:hover {
+    color: #2C2E4F;
+}
+
+/* Individual pages styles */
+
+div.header {
+    width: 100%;
+    background-color: #ff5550;
+    padding: 1em 1em 16em 2em;
+    height: 0em;
+    text-align: center;
+}
+
+div.header h1 {
+    font-size: 3em;
+}
+
+div.header nav {
+    padding: 2em 0em 0em 0em;
+}
+
+div.header a {
+    color: white;
+}
+
+.header-btn {
+    width: 35%;
+    padding: 3% 5%;
+    font-size: 1em;
+    background-color: #ff5550;
+    color: white;
+    border: 1px solid white;
+}
+
+.summary h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+div.footer {
+    background-color: #ff5550;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    width: 100%;
+    padding: 1%;
+}
+
+/* End of individual pages styles */
+
+@media screen and (min-width: 600px) {
+    .responsive600 {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #box1 {
+        width: 66.66666%;
+        float: left;
+    }
+
+    #box2 {
+        width: 33.33333%;
+        float: right;
+    }
+
+    #box3, #box6, #box9 {
+        clear: both;
+        float: left;
+        width: 33.3333%;
+    }
+
+    #box4, #box5, #box7, #box8, #box10, #box11 {
+        float: left;
+        width: 33.3333%;
+    }
+
+    div#box1 button {
+        width: 12em;
+        padding: 1% 0%;
+    }
+
+    .header-btn {
+        width: 12em;
+        padding: 1% 0%;
+    }
+
+    a:hover, button:hover {
+        color: #2C2E4F;
+}
+    
+}
