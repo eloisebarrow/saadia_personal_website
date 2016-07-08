@@ -6,22 +6,31 @@
 
 body {
     margin: 0;
+    font-family: "Calibri", "Trebuchet MS", Helvetica;
 }
 
-div.grid {
+.grid {
     width: 100%;
     height: 10em;
     margin: 0;
-    /*border: 1px solid black;*/
 }
 
 div a {
     text-decoration: none;
     color: white;
-/*    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 4em;*/
+}
+
+div h1.title {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 0.25em;
+    padding-top: 0.25em;
+}
+
+div p.tagline {
+    font-size: 1.25em;
+    padding-bottom: 0.5em;
+    line-height: 1.25em;
 }
 
 #box1, #box3, #box5, #box7, #box9, #box11 {
@@ -46,10 +55,15 @@ div#box1 button {
 div.grid h3 {
     text-align: center;
     position: relative;
-    top: 30%;
+    top: 40%;
+    font-size: 1.25em;
 }
 
 a:hover, button:hover {
+    color: #2C2E4F;
+}
+
+nav.header-nav a:hover {
     color: #2C2E4F;
 }
 
@@ -58,7 +72,7 @@ a:hover, button:hover {
 div.header {
     width: 100%;
     background-color: #ff5550;
-    padding: 1em 1em 16em 2em;
+    padding: 1em 1em 11em 2em;
     height: 0em;
     text-align: center;
 }
@@ -68,7 +82,7 @@ div.header h1 {
 }
 
 div.header nav {
-    padding: 2em 0em 0em 0em;
+    padding: 1em 0em 0em 0em;
 }
 
 div.header a {
@@ -82,10 +96,11 @@ div.header a {
     background-color: #ff5550;
     color: white;
     border: 1px solid white;
+    margin-top: 0.5em;
 }
 
 .summary h3 {
-    text-align: center;
+    /*text-align: center;*/
     font-size: 2em;
 }
 
@@ -100,14 +115,14 @@ div.footer {
 
 /* End of individual pages styles */
 
-@media screen and (min-width: 600px) {
-    .responsive600 {
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .responsive {
         float: left;
         width: 50%;
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 901px) {
     #box1 {
         width: 66.66666%;
         float: left;
@@ -139,8 +154,44 @@ div.footer {
         padding: 1% 0%;
     }
 
-    a:hover, button:hover {
-        color: #2C2E4F;
+    /* Individual Pages styles (responsive) */
+
+    .summary-img {
+        float: left;
+        width: 20%;
+        height: 30em;
+        border: 1px solid black;
+        margin: 1em;
+    }
+
+    div.summary {
+        float: left;
+        width: 77%;
+    }
+
+    div.summary h3 {
+        font-size: 2.5em;
+        margin: 3% 0;
+    }
+
+    div.summary p {
+        line-height: 3em;
+        font-size: 1.25em;
+        margin-right: 4em;
+    }
+
+    div.summary ul.summary-list {
+        list-style: circle;
+        line-height: 3em;
+        margin-left: 3em;
+    }
+
+    div.footer {
+        clear: left;
+        font-size: 1em;
+    }
+
+    /* End of Individual Pages styles responsive) */
 }
     
 }
