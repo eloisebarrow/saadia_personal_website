@@ -99,16 +99,43 @@ div.header a {
     margin-top: 0.5em;
 }
 
+.summary-img {
+    width: 90%;
+    height: 15em;
+    border: 1px solid black;
+    margin: 1em;
+}
+
+div.summary {
+    width: 90%;
+    margin: 1em;
+}
+
 .summary h3 {
-    /*text-align: center;*/
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.summary p {
+    line-height: 2.5em;
+    margin-left: 1em;
+}
+
+div.summary li {
+    font-weight: 900;
+}
+
+div.summary ul.summary-list {
+    list-style: circle;
+    line-height: 3em;
+    margin-left: 2em;
 }
 
 div.footer {
     background-color: #ff5550;
     color: white;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     width: 100%;
     padding: 1%;
 }
@@ -120,6 +147,46 @@ div.footer {
         float: left;
         width: 50%;
     }
+
+    /* Individual Pages styles (responsive-mid) */
+    .footer {
+        clear: both;
+        width: 100%;
+    }
+
+    .summary-img {
+        width: 20%;
+        height: 30em;
+        border: 1px solid black;
+        margin: 1em;
+    }
+
+    div.summary {
+        float: right;
+        width: 69%;
+    }
+
+    div.summary h3 {
+        font-size: 2em;
+        margin: 3% 0;
+    }
+
+    div.summary p {
+        line-height: 2.5em;
+        margin-left: 1em;
+    }
+
+    div.summary li {
+        font-weight: 900;
+    }
+
+    div.summary ul.summary-list {
+        list-style: circle;
+        line-height: 3em;
+        margin-left: 2em;
+    }
+
+    /* End of Individual Pages styles (responsive-mid) */
 }
 
 @media screen and (min-width: 901px) {
@@ -154,7 +221,16 @@ div.footer {
         padding: 1% 0%;
     }
 
-    /* Individual Pages styles (responsive) */
+    /* Individual Pages styles (responsive-wide) */
+
+    li {
+        font-weight: 900;
+    }
+
+    .footer {
+        clear: both;
+        width: 100%;
+    }
 
     .summary-img {
         float: left;
@@ -165,8 +241,8 @@ div.footer {
     }
 
     div.summary {
-        float: left;
-        width: 77%;
+        float: right;
+        width: 72%;
     }
 
     div.summary h3 {
@@ -178,6 +254,7 @@ div.footer {
         line-height: 3em;
         font-size: 1.25em;
         margin-right: 4em;
+        padding-left: 1em;
     }
 
     div.summary ul.summary-list {
@@ -186,12 +263,11 @@ div.footer {
         margin-left: 3em;
     }
 
-    div.footer {
-        clear: left;
+    ul p.list-descriptions {
         font-size: 1em;
     }
 
-    /* End of Individual Pages styles responsive) */
+    /* End of Individual Pages styles (responsive-wide) */
 }
     
 }
