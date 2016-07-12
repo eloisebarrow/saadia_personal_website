@@ -7,17 +7,22 @@
 body {
     margin: 0;
     font-family: "Calibri", "Trebuchet MS", Helvetica;
-}
-
-.grid {
-    width: 100%;
-    height: 10em;
-    margin: 0;
+    height: 100%;
 }
 
 div a {
     text-decoration: none;
     color: white;
+}
+
+.grid {
+    width: 100%;
+    height: 15em;
+    margin: 0;
+}
+
+div.footer {
+    border-top: 1px solid white;
 }
 
 div h1.title {
@@ -33,14 +38,17 @@ div p.tagline {
     line-height: 1.25em;
 }
 
-#box1, #box3, #box5, #box7, #box9, #box11 {
+#box3, #box5, #box7, #box9, #box11 {
     background-color: #ff5550;
     color: white;
 }
 
 div#box1 {
     text-align: center;
-    height: 11em;
+    height: 15em;
+    padding-top: 1.5em;
+    background-color: #ff5550;
+    color: white;
 }
 
 div#box1 button {
@@ -67,6 +75,14 @@ nav.header-nav a:hover {
     color: #2C2E4F;
 }
 
+button {
+    cursor: pointer;
+}
+
+#index-body {
+    background-color: #ff5550;
+}
+
 /* Individual pages styles */
 
 div.header {
@@ -75,6 +91,10 @@ div.header {
     padding: 1em 1em 11em 2em;
     height: 0em;
     text-align: center;
+}
+
+div.header h1 a:hover {
+    color: #2C2E4F;
 }
 
 div.header h1 {
@@ -143,12 +163,24 @@ div.footer {
     height: 35em;
 }
 
+nav.header-nav {
+    margin-top: 0.25em;
+}
+
+nav.header-nav a {
+    margin: 0.25em;
+}
+
 /* End of individual pages styles */
 
 @media screen and (min-width: 600px) and (max-width: 900px) { /* RESPONSIVE DESIGN: MID */
     .responsive {
         float: left;
         width: 50%;
+    }
+
+    div.footer {
+        border-top: 1px solid white;
     }
 
     /* Individual Pages styles (responsive-mid) */
@@ -234,23 +266,24 @@ div.footer {
         margin: 1em;
     }
 
-    #img-theater {
-        width: 30%;
-    }
-
     #text-theater {
         width: 59%;
     }
 
-    /* End of Individual Pages styles (responsive-mid) */
-
-    #box1 {
-        border-bottom: 1px solid white;
+    nav.header-nav {
+        display: flex;
+        justify-content: space-around;
     }
+
+    /* End of Individual Pages styles (responsive-mid) */
 
 } /* END OF RESPONSIVE DESIGN: MID */
 
 @media screen and (min-width: 901px) { /* RESPONSIVE DESIGN: WIDE */
+    div.footer {
+        border-top: 1px solid white;
+    }
+
     #box1 {
         width: 66.66666%;
         float: left;
@@ -388,6 +421,14 @@ div.footer {
 
     #box1 {
         border-bottom: 1px solid white;
+    }
+
+    nav.header-nav {
+        margin-top: 0.70em;
+    }
+
+    nav.header-nav a {
+        margin: 0.5em;
     }
 
     /* End of Individual Pages styles (responsive-wide) */
