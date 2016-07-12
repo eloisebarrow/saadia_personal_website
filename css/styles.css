@@ -178,6 +178,10 @@ nav.header-nav a {
 
 /* Contact Form Styles */
 
+#header-contact {
+    padding-bottom: 12em;
+}
+
 form#contact-me {
     margin: 1em;
     font-size: 1.25em;
@@ -221,6 +225,11 @@ form button {
 
 /* End of Contact Form Styles */
 
+img:hover {
+    opacity: 0.5;
+    transition: all 500ms;
+}
+
 @media screen and (min-width: 600px) and (max-width: 900px) { /* RESPONSIVE DESIGN: MID */
     .responsive {
         float: left;
@@ -238,7 +247,7 @@ form button {
     }
 
     .summary-img {
-        width: 20%;
+        width: 30%;
         height: 30em;
         margin: 1em;
     }
@@ -325,6 +334,11 @@ form button {
 
     /* End of Individual Pages styles (responsive-mid) */
 
+    img:hover {
+        opacity: 0.5;
+        transition: all 500ms;
+    }
+
 } /* END OF RESPONSIVE DESIGN: MID */
 
 @media screen and (min-width: 901px) { /* RESPONSIVE DESIGN: WIDE */
@@ -365,6 +379,11 @@ form button {
 
     #box2 {
         overflow: hidden;
+    }
+
+    img:hover {
+        opacity: 0.5;
+        transition: all 500ms;
     }
 
     /* Individual Pages styles (responsive-wide) */
@@ -524,5 +543,5 @@ form button {
     }
 
     /* End of Contact Form Styles (responsive-wide) */
-    
+
 } /* END OF RESPONSIVE DESIGN: WIDE */
